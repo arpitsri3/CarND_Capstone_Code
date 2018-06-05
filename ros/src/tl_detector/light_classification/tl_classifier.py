@@ -37,8 +37,8 @@ class TLClassifier(object):
         
         if circles is not None:
             color = TrafficLight.RED
-            for circle in circles[0, :]:
-                cv2.circle(image, (i[0], i[1]), i[2], (255, 0, 0), 2)
+            #for circle in circles[0, :]:
+                #cv2.circle(image, (circle[0], circle[1]), circle[2], (255, 0, 0), 2)
             return color
                 
         #Detecting yellow light for yellow hue range 
@@ -51,8 +51,8 @@ class TLClassifier(object):
         
         if circles is not None:
             color = TrafficLight.YELLOW
-            for circle in circles[0, :]:
-                cv2.circle(image, (i[0], i[1]), i[2], (255, 0, 0), 2)
+            #for circle in circles[0, :]:
+                #cv2.circle(image, (circle[0], circle[1]), circle[2], (255, 0, 0), 2)
             return color
         
         return color
